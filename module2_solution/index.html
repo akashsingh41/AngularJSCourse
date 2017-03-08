@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListCheckOff'>
+  <head>
+    <meta charset='utf-8'>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Shopping List App</title>
+  </head>
+  <body>
+    <div id="panel">
+      <h2>Shopping List App</h2>
+
+<!-- List #1 : to buy items -->
+      <div id="buyList" ng-controller='ToBuyController as toBuy' class="list">
+          <ul aria-label="To Buy">
+            <li ng-repeat="item in toBuy.items">
+              Buy {{item.quantity}} {{item.name}}
+              <button ng-click="toBuy.moveBoughtItem(item.name, item.quantity, $index);">Bought</button>
+            </li>
+          </ul>
+          <div ng-if="!toBuy.items.length" class="empty">{{toBuy.emptyMessage}}
+            </div>
+          </div>
+
+ <!-- List #2 : already bought items -->
+<div id="alreadyBoughtList" ng-controller="AlreadyBoughtController as alreadyBought" class="list">
+    <ul aria-label="Already Bought">
+      <li ng-repeat="item in alreadyBought.items">
+        Bought {{item.quantity}} {{item.name}}
+      </li>
+    </ul>
+    <div ng-if="!alreadyBought.items.length" class="empty">{{alreadyBought.emptyMessage}}
+      </div>
+    </div>
+  </div>
+    <div id="footer">akashsingh41@hotmail.com</div>
+  </body>
+</html>

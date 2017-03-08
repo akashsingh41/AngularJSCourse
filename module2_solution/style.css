@@ -1,0 +1,49 @@
+body
+{
+  font-family: calibri;
+}
+
+
+li
+{
+  padding: 10px;
+}
+
+.empty
+{
+    text-align: right;
+    color: blue;
+}
+
+#panel
+{
+  top: 25%;
+	left: 40%;
+	margin: -100px 0 0 -150px;
+  text-align:center;
+	justify-content: center;
+	position:absolute;
+}
+
+.list
+{
+  float: left;
+  padding:30px;
+  text-align: left;
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-size:150%;
+    font-weight:bold;
+    /*margin-left:-15px;*/
+}
+
+#footer
+{
+  width:99%;
+	bottom:0;
+	height:20px;
+	text-align:center;
+	position:absolute;
+}
