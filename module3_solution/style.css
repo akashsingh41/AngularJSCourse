@@ -1,0 +1,36 @@
+body
+{
+  font-family: calibri;
+  background-color:#262626;
+  color:#DC143C;
+  font-size: 0.95em;
+}
+
+
+.pane
+{
+	text-align:center;
+	justify-content: center;  
+	position:absolute;
+	top: 25%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+.item_card{
+	width:99%;
+	border: 1px solid #ddd;
+	border-radius:12px;
+	padding:10px;
+	top: 25%;
+	margin-bottom:20px;
+	
+}
+
+#data
+{
+		top:30%;
+		position:absolute;
+		width:99%;
+		padding:
+}
