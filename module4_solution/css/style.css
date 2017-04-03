@@ -1,0 +1,56 @@
+body {
+  font-size: 1em;
+
+  font-family: calibri;
+  background-color:#004d00;
+  color:#b3d9ff;
+}
+
+.item_card{
+	width:99%;
+	border: 1px solid #ddd;
+	border-radius:12px;
+	padding:10px;
+	top: 25%;
+	margin-bottom:20px;
+
+}
+
+#home:hover
+{
+  content:url("../images/a_home.png");
+}
+
+.nav_label
+{
+  padding-bottom: 15px;
+  font-size:1.5em;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  height:50px;
+  width: 50px;
+}
+
+a[ui-sref]
+{
+  text-decoration: none;
+  color: #0066cc;
+}
+
+li[ui-sref]:hover
+{
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items">
+    <div class="item_card">
+    <b>Name</b>: {{item.name}} ({{item.short_name}})
+    <br>
+    <b>Description</b>: {{item.description}}
+    <br><br>
+    {{item.large_portion_name}} :: {{item.price_large}}
+    <br>
+    {{item.small_portion_name}} :: {{item.price_small}}
+
+  </div>
+</li>
+</ul>

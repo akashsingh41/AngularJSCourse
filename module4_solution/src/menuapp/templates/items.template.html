@@ -1,0 +1,10 @@
+<a ui-sref="home"><img src="../images/in_home.png"/ id="home"></a> &lt;
+<a ui-sref="categories"><strong class="nav_label">Categories</strong></a>
+&lt; <strong class="nav_label">Items</strong>
+
+<div padding="10px">
+    Category: {{itemDetail.category.name}} ({{itemDetail.category.short_name}})<br>
+    Instructions: {{itemDetail.category.special_instructions}}
+</div>
+<h4 style="align-self:center">Items for the category</h4>
+<item-list items="itemDetail.items"></item-list>
